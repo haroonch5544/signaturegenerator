@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Flow - Elegant Signature Generator</title>
+    <!-- Google Fonts - Signature Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Allura&family=Satisfy&family=Sacramento&family=Alex+Brush&family=Yellowtail&family=Marck+Script&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <p class="credit-text">Created by <span class="credit-name">Haroon</span></p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Signature Flow</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Transform your name into an elegant signature with the flow of ink</p>
+            <button class="cta-button animate-fade-in-delay-2" onclick="scrollToGenerator()">Get Started</button>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Signature Generator Section -->
+    <section id="generator" class="generator-section fade-in-section">
+        <div class="generator-container">
+            <h2 class="section-title">Create Your Signature</h2>
+            <div class="glass-container">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="nameInput" 
+                        class="name-input" 
+                        placeholder="Enter your name..."
+                        autocomplete="off"
+                    >
+                    <button id="generateBtn" class="generate-btn">
+                        <span>Generate Signature</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="signature-canvas-container">
+                    <canvas id="signatureCanvas" class="signature-canvas"></canvas>
+                    <div id="signaturePlaceholder" class="signature-placeholder">
+                        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 19h7M5 19h4M12 5v14M5 12h14"/>
+                        </svg>
+                        <p>Your signature will appear here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works fade-in-section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Enter Your Name</h3>
+                    <p class="step-description">Type your name in the input field above</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Generate Signature</h3>
+                    <p class="step-description">Click the button to create your elegant signature</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Download & Use</h3>
+                    <p class="step-description">Save your signature and use it anywhere</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Signature Flow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
